@@ -1,0 +1,215 @@
+.post-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 40%;
+    margin-top: 0.5rem;
+    background-color: whitesmoke;
+    padding: 1rem 0;
+    box-shadow: 1px 1px 2px #bfbfbf;
+    border-radius: 0.3rem;
+    width: 52%;
+  }
+
+  .post-wrapper:hover {
+    box-shadow: 0.2px 0.2px 2px #000000;
+  }
+  
+  .post-container {
+    width: 100%;
+  }
+  
+  .post-details {
+    margin-top: var(--spacing-2);
+    margin-left: 1rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--spacing-1);
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .post-details .author-username {
+    color: var(--color-branding);
+    font-weight: bold;
+  }
+  
+  .post-image-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .post-image-container .post-image {
+    width: 100%;
+  }
+  
+  .post-title {
+    margin-left: 3%;
+    margin-bottom: var(--spacing-2);
+    color: var(--color-text-header);
+  }
+  
+  .post-container .post-votes-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 1rem;
+  }
+  
+  .icon-action {
+    font-size: 1.5rem;
+  }
+  
+  .post-votes-container .post-votes-value {
+    margin: var(--spacing-1) 0;
+    font-weight: bolder ;
+  }
+  
+  .post-votes-value.up-vote {
+    color: var(--color-success) !important;
+    font-weight: bolder;
+  }
+  
+  .post-votes-value.down-vote {
+    color: var(--color-alert) !important;
+    font-weight: bolder;
+  }
+  
+  .up-vote:hover {
+    color: var(--color-success) !important;
+  }
+  
+  .up-vote.active {
+    color: var(--color-success) !important;
+  }
+  
+  .down-vote:hover {
+    color: var(--color-alert) !important;
+  }
+  
+  .down-vote.active {
+    color: var(--color-alert) !important;
+  }
+  
+  .icon-action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border-radius: var(--radius);
+  }
+  
+  .icon-action-button:hover {
+    background: var(--color-on-hover);
+  }
+  
+  .post-comments-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-comments-container .icon-action {
+    padding: 0.35rem 0.6rem;
+  }
+  
+  .author-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .showing-comments {
+    color: var(--color-branding);
+  }
+  
+  .icon-action-button-up-vote {
+    width: 7%;
+    margin: 0 0.5rem;
+    margin-top: 0.3rem;
+  }
+
+  .icon-action-button-down-vote {
+    width: 7%;
+    margin: 0 0.5rem;
+    margin-top: 0.3rem;
+  }
+
+  @media only screen and (max-width: 1300px) {
+      .icon-action-button-up-vote {
+        width: 9%;
+      } .icon-action-button-down-vote {
+        width: 9%;
+      }
+  }
+
+  @media only screen and (max-width: 1050px) {
+    .post-wrapper {
+      width: 70%;
+      margin-left: 25%;
+      transition: width 0.53s ease-in;
+    } .author-username {
+      font-size: 1.2rem;
+    } .post-title {
+      font-size: 1.2rem;
+    } 
+  }
+
+  @media only screen and (max-width: 900px) {
+    .post-wrapper {
+      width: 80%;
+      margin-left: 27%;
+      transition: width 0.53s ease-in;
+    } .author-username {
+      font-size: 1rem;
+    } .post-title {
+      font-size: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .post-wrapper {
+      width: 110%;
+      margin-left: 13%;
+      transition: width 0.53s ease-in;
+    } .author-username {
+      font-size: 0.8rem;
+    } .post-title {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .icon-action-button-up-vote {
+      width: 10%;
+    } .icon-action-button-down-vote {
+      width: 10%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .icon-action-button-up-vote {
+      width: 12%;
+    } .icon-action-button-down-vote {
+      width: 12%;
+    } 
+  }
+
+  @media only screen and (max-width: 500px) {
+    .icon-action-button-up-vote {
+      width: 12%;
+      padding: 0;
+    } .icon-action-button-down-vote {
+      width: 12%;
+      padding: 0;
+    } .post-vote-value {
+      font-size: 0.8rem;
+    } .icon-action {
+      height: 1rem;
+      width: 85%;
+    } .numC {
+      font-size: 0.8rem;
+    }
+  }

@@ -1,0 +1,87 @@
+.post-votes-value-loading {
+    width: 2ch !important;
+  }
+  
+.post {
+    display: flex;
+    background: var(--color-foreground);
+    box-shadow: var(--box-shadow);
+    margin-bottom: var(--spacing-4);
+    border-radius: var(--radius);
+    padding: var(--spacing-3);
+    transition: box-shadow 0.1s ease-in;
+    color: var(--color-text-secondary);
+    margin-left: 40%;
+    width: 40%;
+}
+
+@keyframes zoom {
+  0% {background-color: rgb(255, 255, 255)}
+  25% {background-color: rgb(231, 231, 231)}
+  50% {background-color: rgb(243, 243, 243)}
+  100% {background-color: rgb(255, 255, 255)}
+}
+
+.post {
+  background-color: white;
+  animation-name: zoom;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+.post .icon-action-button-up-vote {
+  width: 3rem;
+}
+
+.post .icon-action-button-down-vote {
+  width: 3rem;
+}
+
+.post .post-details {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1050px) {
+  .post {
+    margin-left: 23%;
+    width: 65%;
+  } .post .icon-action-button-up-vote {
+    width: 2.5rem;
+  } .post .icon-action-button-down-vote {
+    width: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .post {
+    margin-left: 23%;
+    width: 75%;
+  } .post .icon-action-button-up-vote {
+    width: 2.5rem;
+  } .post .icon-action-button-down-vote {
+    width: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .post {
+    margin-left: 23%;
+    width: 68%;
+  } .post .icon-action-button-up-vote {
+    width: 2.2rem;
+  } .post .icon-action-button-down-vote {
+    width: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .post {
+    margin-left: 23%;
+    width: 65%;
+  } .post .icon-action-button-up-vote {
+    width: 1.5rem;
+  } .post .icon-action-button-down-vote {
+    width: 1.5rem;
+  }
+}
