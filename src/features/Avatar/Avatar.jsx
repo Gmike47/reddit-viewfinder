@@ -11,6 +11,8 @@ const Avatar = (props) => {
         const json = await response.json();
         const data = json.data.snoovatar_img;
         
+        // apperntly not everyone has an avatar so the url you get from the api will return empty
+        // in which case the if else statement will check it and assign the defpic for the src
         if (data.length > 0) {
             setSrc(data);
         } else {
