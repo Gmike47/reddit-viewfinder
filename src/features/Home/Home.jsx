@@ -54,6 +54,17 @@ const Home = () => {
         );
     };
 
+    const changeHref = () => {
+        const pTag = document.getElementsByClassName('sendChange')[0];
+        const aTag = document.getElementById('sendMe');
+        
+        if (pTag.innerHTML === 'Want to see more?') {
+            pTag.innerHTML = 'Ummmm, try again';
+        } else {
+            aTag.href = 'https://www.reddit.com/';
+        }
+    }
+
     return (
         <>
             {posts.map((post, index) => (
@@ -63,6 +74,10 @@ const Home = () => {
                 onToggleComments={onToggleComments(index)}
                 />
             ))}
+            <div className="sendTo">
+                <p className="sendChange">Want to see more?</p>
+                <a href="#sendMe" title="the actual one" id="sendMe" onClick={changeHref} >Send me to reddit</a>
+            </div>
         </>
     );
 };
